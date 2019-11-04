@@ -1,0 +1,116 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    font-size: 1.4rem;
+    font-size: 1.2rem;
+    line-height: 1.4em;
+    margin: 0;
+
+
+}
+/* Encabezado */
+.container{
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: justify;
+}
+.header{
+
+    background:#17202A;
+    color:white;
+    padding: 1.8rem 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right:0 ;
+    -webkit-box-shadow: 0px 14px 13px 12px#17202A ; 
+   box-shadow: 0px 14px 13px 12px#17202A ;
+   z-index: 1;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo-nav-container{
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navigation ul {
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navigation ul li{
+    display: inline-block;
+}
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s linear;
+    border-radius: 6px;
+
+}
+.navigation ul li a:hover{
+background:#5DADE2;
+}
+
+.main{
+    padding-top: 12rem;
+}
+
+.footer{
+    background: #f2f2f2;
+    padding: 4rem 0;
+    text-align: center;
+    color: black;
+    margin-top: 3rem;
+}
+.footer p{
+    text-align: center;
+}
+.menu-icon{
+    display: none;
+}
+
+/* Empieza el enmaquetado  */
+
+
+
+@media(max-width:767px){
+
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+    }
+   .navigation{
+       width: 100%;
+       margin-top: 1rem;
+   }
+   .navigation ul{
+       display: none;
+
+   }
+   .navigation ul.show{
+       display: block;
+   }
+    .navigation ul li{
+        display: block;
+    }
+    .navigation ul li a{
+        display: block;
+        padding: 0.5rem 1rem;
+        transition: all 0.4s linear;
+        border-radius: 6px;
+    
+    }
+    .navigation ul li a:hover{
+    background: teal;
+    }
+}
